@@ -1,0 +1,54 @@
+@prefix aerdcat: <https://w3id.org/aerOS/data-catalog#> .
+@prefix aeros: <https://w3id.org/aerOS/continuum#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<urn:Organization:NCSRD:Domain:Default:Catalog> a dcat:Catalog ;
+    dcat:themeTaxonomy <urn:Organization:NCSRD:Domain:Default:BusinessGlossary> ;
+    aeros:domain <urn:Organization:NCSRD:Domain:Default> ;
+    aerdcat:contextBroker <urn:Organization:NCSRD:Domain:Default:ContextBroker> ;
+    aerdcat:dataProduct <urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1>,
+        <urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2> .
+
+<urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1:Distribution> a dcat:Distribution ;
+    dcat:accessService <urn:Organization:NCSRD:Domain:Default:ContextBroker> ;
+    dcat:accessURL <http://localhost:1026/ngsi-ld/v1> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/application/ld+json> .
+
+<urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2:Distribution> a dcat:Distribution ;
+    dcat:accessService <urn:Organization:NCSRD:Domain:Default:ContextBroker> ;
+    dcat:accessURL <http://localhost:1026/ngsi-ld/v1> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/application/ld+json> .
+
+<https://w3id.org/aerOS/building#Desk> a skos:Concept ;
+    skos:inScheme <urn:Organization:NCSRD:Domain:Default:BusinessGlossary> .
+
+<urn:Organization:NCSRD:Domain:Default:BusinessGlossary> a skos:ConceptScheme .
+
+<urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1> a aerdcat:DataProduct ;
+    dcterms:description "Contains data related to the inventory of desks" ;
+    dcterms:identifier "Data_Product_1" ;
+    dcterms:publisher <urn:Organization:NCSRD>,
+        <urn:User:janedoe> ;
+    dcat:distribution <urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1:Distribution> ;
+    dcat:keyword "Marousi",
+        "network lab DEVNET" ;
+    dcat:theme <https://w3id.org/aerOS/building#Desk> .
+
+<urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2> a aerdcat:DataProduct ;
+    dcterms:description "Contains data related to the inventory of desks" ;
+    dcterms:identifier "Data_Product_2" ;
+    dcterms:publisher <urn:Organization:NCSRD>,
+        <urn:User:johndoe> ;
+    dcat:distribution <urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2:Distribution> ;
+    dcat:keyword "Marousi",
+        "network lab DEVNET" ;
+    dcat:theme <https://w3id.org/aerOS/building#Desk> .
+
+<urn:Organization:NCSRD:Domain:Default:ContextBroker> a aerdcat:ContextBroker ;
+    dcterms:conformsTo <https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.08.01_60/gs_CIM009v010801p.pdf> ;
+    dcat:endpointURL <http://localhost:1026/ngsi-ld/v1> ;
+    aeros:domain <urn:Organization:NCSRD:Domain:Default> ;
+    aerdcat:servesDataProduct <urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1>,
+        <urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2> .

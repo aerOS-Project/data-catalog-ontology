@@ -1,0 +1,160 @@
+[
+    {
+        "id": "https://w3id.org/aerOS/building#Desk",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#inScheme": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default:BusinessGlossary"
+        }
+    },
+    {
+        "id": "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1",
+        "type": "https://w3id.org/aerOS/data-catalog#DataProduct",
+        "http://purl.org/dc/terms/description": {
+            "type": "Property",
+            "value": "Contains data related to the inventory of desks"
+        },
+        "http://purl.org/dc/terms/identifier": {
+            "type": "Property",
+            "value": "Data_Product_1"
+        },
+        "http://purl.org/dc/terms/publisher": {
+            "type": "Relationship",
+            "object": [
+                "urn:Organization:NCSRD",
+                "urn:User:janedoe"
+            ]
+        },
+        "http://www.w3.org/ns/dcat#distribution": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1:Distribution"
+        },
+        "http://www.w3.org/ns/dcat#keyword": {
+            "type": "Property",
+            "value": [
+                "Marousi",
+                "network lab DEVNET"
+            ]
+        },
+        "http://www.w3.org/ns/dcat#theme": {
+            "type": "Relationship",
+            "object": "https://w3id.org/aerOS/building#Desk"
+        }
+    },
+    {
+        "id": "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2",
+        "type": "https://w3id.org/aerOS/data-catalog#DataProduct",
+        "http://purl.org/dc/terms/description": {
+            "type": "Property",
+            "value": "Contains data related to the inventory of desks"
+        },
+        "http://purl.org/dc/terms/identifier": {
+            "type": "Property",
+            "value": "Data_Product_2"
+        },
+        "http://purl.org/dc/terms/publisher": {
+            "type": "Relationship",
+            "object": [
+                "urn:Organization:NCSRD",
+                "urn:User:johndoe"
+            ]
+        },
+        "http://www.w3.org/ns/dcat#distribution": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2:Distribution"
+        },
+        "http://www.w3.org/ns/dcat#keyword": {
+            "type": "Property",
+            "value": [
+                "Marousi",
+                "network lab DEVNET"
+            ]
+        },
+        "http://www.w3.org/ns/dcat#theme": {
+            "type": "Relationship",
+            "object": "https://w3id.org/aerOS/building#Desk"
+        }
+    },
+    {
+        "id": "urn:Organization:NCSRD:Domain:Default:ContextBroker",
+        "type": "https://w3id.org/aerOS/data-catalog#ContextBroker",
+        "http://purl.org/dc/terms/conformsTo": {
+            "type": "Relationship",
+            "object": "https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.08.01_60/gs_CIM009v010801p.pdf"
+        },
+        "http://www.w3.org/ns/dcat#endpointURL": {
+            "type": "Relationship",
+            "object": "http://localhost:1026/ngsi-ld/v1"
+        },
+        "https://w3id.org/aerOS/continuum#domain": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default"
+        },
+        "https://w3id.org/aerOS/data-catalog#servesDataProduct": {
+            "type": "Relationship",
+            "object": [
+                "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1",
+                "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2"
+            ]
+        }
+    },
+    {
+        "id": "urn:Organization:NCSRD:Domain:Default:Catalog",
+        "type": "http://www.w3.org/ns/dcat#Catalog",
+        "http://www.w3.org/ns/dcat#themeTaxonomy": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default:BusinessGlossary"
+        },
+        "https://w3id.org/aerOS/continuum#domain": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default"
+        },
+        "https://w3id.org/aerOS/data-catalog#contextBroker": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default:ContextBroker"
+        },
+        "https://w3id.org/aerOS/data-catalog#dataProduct": {
+            "type": "Relationship",
+            "object": [
+                "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1",
+                "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2"
+            ]
+        }
+    },
+    {
+        "id": "urn:Organization:NCSRD:Domain:Default:BusinessGlossary",
+        "type": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    {
+        "id": "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_2:Distribution",
+        "type": "http://www.w3.org/ns/dcat#Distribution",
+        "http://www.w3.org/ns/dcat#accessService": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default:ContextBroker"
+        },
+        "http://www.w3.org/ns/dcat#accessURL": {
+            "type": "Relationship",
+            "object": "http://localhost:1026/ngsi-ld/v1"
+        },
+        "http://www.w3.org/ns/dcat#mediaType": {
+            "type": "Relationship",
+            "object": "http://www.iana.org/assignments/media-types/application/ld+json"
+        }
+    },
+    {
+        "id": "urn:Organization:NCSRD:Domain:Default:DataProduct:Data_Product_1:Distribution",
+        "type": "http://www.w3.org/ns/dcat#Distribution",
+        "http://www.w3.org/ns/dcat#accessService": {
+            "type": "Relationship",
+            "object": "urn:Organization:NCSRD:Domain:Default:ContextBroker"
+        },
+        "http://www.w3.org/ns/dcat#accessURL": {
+            "type": "Relationship",
+            "object": "http://localhost:1026/ngsi-ld/v1"
+        },
+        "http://www.w3.org/ns/dcat#mediaType": {
+            "type": "Relationship",
+            "object": "http://www.iana.org/assignments/media-types/application/ld+json"
+        }
+    }
+]

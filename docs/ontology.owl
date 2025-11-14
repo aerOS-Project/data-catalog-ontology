@@ -1,0 +1,638 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/aerOS/data-catalog#"
+     xml:base="https://w3id.org/aerOS/data-catalog"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/aerOS/data-catalog#">
+        <owl:versionIRI rdf:resource="https://w3id.org/aerOS/data-catalog"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-19</terms:created>
+        <terms:creator>Ignacio Dominguez Martinez-Casanueva</terms:creator>
+        <terms:description>
+                                        Ontology that defines concepts for representing the aerOS Data Catalog
+                                        </terms:description>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/APACHE2.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-19</terms:modified>
+        <terms:source rdf:resource="https://gitlab.aeros-project.eu/wp4/t4.1/data-catalog-ontology"/>
+        <terms:title>aerOS Data Catalog Ontology</terms:title>
+        <vann:preferredNamespacePrefix>aerdcat</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/aerOS/data-catalog#"/>
+        <rdfs:label xml:lang="en">aerOS Data Catalog Ontology</rdfs:label>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label>publisher</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label>in scheme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessService -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#accessService">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>access service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#catalog -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#catalog">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>catalog</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#dataset -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#dataset">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>dataset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#distribution">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>distribution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#servesDataset -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#servesDataset">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>serves dataset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#service -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#service">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#theme">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>theme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#themeTaxonomy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#themeTaxonomy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>theme taxonomy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#member -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#member">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
+        <rdfs:label>member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#organization -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#organization">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
+        <rdfs:label>organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#role -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#role">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Role"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
+        <rdfs:label>role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/aerOS/continuum#domain -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/aerOS/continuum#domain">
+        <rdfs:range rdf:resource="https://w3id.org/aerOS/continuum#Domain"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/continuum"/>
+        <rdfs:label>domain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/aerOS/data-catalog#contextBroker -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/aerOS/data-catalog#contextBroker">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/dcat#service"/>
+        <rdfs:range rdf:resource="https://w3id.org/aerOS/data-catalog#ContextBroker"/>
+        <rdfs:comment>Relation with a context broker.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/data-catalog"/>
+        <rdfs:label>context broker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/aerOS/data-catalog#dataProduct -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/aerOS/data-catalog#dataProduct">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
+        <rdfs:range rdf:resource="https://w3id.org/aerOS/data-catalog#DataProduct"/>
+        <rdfs:comment>Relation with a data product.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/data-catalog"/>
+        <rdfs:label>data product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/aerOS/data-catalog#servesDataProduct -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/aerOS/data-catalog#servesDataProduct">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/dcat#servesDataset"/>
+        <rdfs:range rdf:resource="https://w3id.org/aerOS/data-catalog#DataProduct"/>
+        <rdfs:comment>Denotes a data product exposed by a data service.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/data-catalog"/>
+        <rdfs:label>serves data product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/conformsTo">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label>conforms to</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label>identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#accessURL">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>access url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#endpointURL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#endpointURL">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>endpoint url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#keyword">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>keyword</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#mediaType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#mediaType">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>media type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/rml/TriplesMap -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rml/TriplesMap">
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/"/>
+        <rdfs:label>Triples Map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label>Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label>Concept Scheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Catalog -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Catalog">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>Catalog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#DataService -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#DataService">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>Data Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+        <rdfs:label>Distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Membership -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Membership">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
+        <rdfs:label>Membership</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Role -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Role">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org#"/>
+        <rdfs:label>Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aerOS/continuum#Domain -->
+
+
+    <owl:Class rdf:about="https://w3id.org/aerOS/continuum#Domain">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/continuum"/>
+        <rdfs:label>Domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aerOS/continuum#User -->
+
+
+    <owl:Class rdf:about="https://w3id.org/aerOS/continuum#User">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/continuum"/>
+        <rdfs:label>User</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aerOS/data-catalog#ContextBroker -->
+
+
+    <owl:Class rdf:about="https://w3id.org/aerOS/data-catalog#ContextBroker">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdfs:comment>Represents an NGSI-LD Context Broker.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/data-catalog"/>
+        <rdfs:label>Context Broker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/aerOS/data-catalog#DataProduct -->
+
+
+    <owl:Class rdf:about="https://w3id.org/aerOS/data-catalog#DataProduct">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:comment>Representation of a data product as wrapper of a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/data-catalog"/>
+        <rdfs:label>Data Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/aerOS/data-catalog#DataProductOwner -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/aerOS/data-catalog#DataProductOwner">
+        <rdf:type rdf:resource="http://www.w3.org/ns/org#Role"/>
+        <rdfs:comment>Person responsible for the creation and publication of a data product.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/aerOS/data-catalog"/>
+        <rdfs:label>Data Product Owner</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label>description</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

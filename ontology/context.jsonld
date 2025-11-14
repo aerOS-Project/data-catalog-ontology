@@ -1,0 +1,175 @@
+{
+  "@context" : {
+    "TriplesMap" : {
+      "@id" : "http://w3id.org/rml/TriplesMap"
+    },
+    "role" : {
+      "@id" : "http://www.w3.org/ns/org#role",
+      "@type" : "@id"
+    },
+    "contextBroker" : {
+      "@id" : "https://w3id.org/aerOS/data-catalog#contextBroker",
+      "@type" : "@id"
+    },
+    "ContextBroker" : {
+      "@id" : "https://w3id.org/aerOS/data-catalog#ContextBroker"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/ns/org#member",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "example" : {
+      "@id" : "http://purl.org/vocab/vann/example"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Membership" : {
+      "@id" : "http://www.w3.org/ns/org#Membership"
+    },
+    "Organization" : {
+      "@id" : "http://www.w3.org/ns/org#Organization"
+    },
+    "Distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#Distribution"
+    },
+    "dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#dataset",
+      "@type" : "@id"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "User" : {
+      "@id" : "https://w3id.org/aerOS/continuum#User"
+    },
+    "Domain" : {
+      "@id" : "https://w3id.org/aerOS/continuum#Domain"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "DataService" : {
+      "@id" : "http://www.w3.org/ns/dcat#DataService"
+    },
+    "Role" : {
+      "@id" : "http://www.w3.org/ns/org#Role"
+    },
+    "themeTaxonomy" : {
+      "@id" : "http://www.w3.org/ns/dcat#themeTaxonomy",
+      "@type" : "@id"
+    },
+    "Catalog" : {
+      "@id" : "http://www.w3.org/ns/dcat#Catalog"
+    },
+    "accessService" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessService",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "keyword" : {
+      "@id" : "http://www.w3.org/ns/dcat#keyword"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "domain" : {
+      "@id" : "https://w3id.org/aerOS/continuum#domain",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "servesDataProduct" : {
+      "@id" : "https://w3id.org/aerOS/data-catalog#servesDataProduct",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "mediaType" : {
+      "@id" : "http://www.w3.org/ns/dcat#mediaType"
+    },
+    "dataProduct" : {
+      "@id" : "https://w3id.org/aerOS/data-catalog#dataProduct",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "endpointURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#endpointURL"
+    },
+    "DataProduct" : {
+      "@id" : "https://w3id.org/aerOS/data-catalog#DataProduct"
+    },
+    "service" : {
+      "@id" : "http://www.w3.org/ns/dcat#service",
+      "@type" : "@id"
+    },
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "servesDataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#servesDataset",
+      "@type" : "@id"
+    },
+    "catalog" : {
+      "@id" : "http://www.w3.org/ns/dcat#catalog",
+      "@type" : "@id"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo"
+    },
+    "organization" : {
+      "@id" : "http://www.w3.org/ns/org#organization",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "accessURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessURL"
+    }
+  }
+}

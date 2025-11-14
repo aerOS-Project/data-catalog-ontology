@@ -1,0 +1,18 @@
+Identifier,Competency Question/Natural Language Sentence,Answer
+R1,A data product represents a dataset managed under governance mechanisms and guidelines,
+R2,A data product is materialized by a distribution in NGSI-LD format,
+R3,An NGSI-LD distribution is exposed by a context broker service,
+R4,A context broker is a type of data service,
+R5,A data product is published by a user with data product owner role,
+R6,A data product may have one or more custom keywords,
+R7,A dataset refers to one or more terms defined in a glossary or controlled vocabulary,
+R8,A context broker stores the data catalog of the domain,
+R9,The aerOS continuum has a catalog that is composed of catalogs of each of the aerOS domains in the continuum,
+R10,A data product has a name and a description,
+R11,"A catalog contains data products, data services, and business glossaries or controlled vocabularies",
+,A data product might be produced with an RML mapping,
+CQ1,"Who is the owner of the data product X? ",Owner AAA
+CQ2,Which data products refer to the concept Y?,DP 1 and DP 2
+CQ3,Which endpoint serves the NGSI-LD distribution of data product X?,http://context-broker-1:8080/ngsi-ld/
+CQ4,How many data products are available in the aerOS domain Z?,4
+CQ5,Which are the keywords registered in a catalog?,"network lab DEVNET, bookings, temperature, co2"

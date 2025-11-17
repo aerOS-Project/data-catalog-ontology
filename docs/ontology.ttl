@@ -15,7 +15,7 @@
                                         """ ;
                                         <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> ;
                                         <http://purl.org/dc/terms/modified> "2024-12-19"^^xsd:date ;
-                                        <http://purl.org/dc/terms/source> <https://gitlab.aeros-project.eu/wp4/t4.1/data-catalog-ontology> ;
+                                        <http://purl.org/dc/terms/source> <https://github.com/aerOS-Project/data-catalog-ontology> ;
                                         <http://purl.org/dc/terms/title> "aerOS Data Catalog Ontology" ;
                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "aerdcat" ;
                                         <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/aerOS/data-catalog#> ;

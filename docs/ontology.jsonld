@@ -415,7 +415,7 @@
     "@value" : "2024-12-19"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@id" : "https://gitlab.aeros-project.eu/wp4/t4.1/data-catalog-ontology"
+    "@id" : "https://github.com/aerOS-Project/data-catalog-ontology"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "aerOS Data Catalog Ontology"

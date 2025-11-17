@@ -18,7 +18,7 @@
                                         </terms:description>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/APACHE2.0"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-19</terms:modified>
-        <terms:source rdf:resource="https://gitlab.aeros-project.eu/wp4/t4.1/data-catalog-ontology"/>
+        <terms:source rdf:resource="https://github.com/aerOS-Project/data-catalog-ontology"/>
         <terms:title>aerOS Data Catalog Ontology</terms:title>
         <vann:preferredNamespacePrefix>aerdcat</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/aerOS/data-catalog#"/>

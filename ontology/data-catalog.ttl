@@ -24,7 +24,7 @@
                                         """ ;
                                         dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
                                         dcterms:modified "2024-12-19"^^xsd:date ;
-                                        dcterms:source <https://gitlab.aeros-project.eu/wp4/t4.1/data-catalog-ontology> ;
+                                        dcterms:source <https://github.com/aerOS-Project/data-catalog-ontology> ;
                                         dcterms:title "aerOS Data Catalog Ontology" ;
                                         vann:preferredNamespacePrefix "aerdcat" ;
                                         vann:preferredNamespaceUri <https://w3id.org/aerOS/data-catalog#> ;

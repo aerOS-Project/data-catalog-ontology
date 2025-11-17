@@ -67,7 +67,7 @@
       "source" : [ {
         "identifier" : "source",
         "language" : "undefined",
-        "value" : "https://gitlab.aeros-project.eu/wp4/t4.1/data-catalog-ontology",
+        "value" : "https://github.com/aerOS-Project/data-catalog-ontology",
         "type" : "iri"
       } ],
       "title" : [ {
